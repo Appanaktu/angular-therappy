@@ -1,0 +1,36 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header card-header-danger">
+            <h4 class="card-title">Erzeuge Nutzer</h4>
+            <p class="card-category">Erzeuge einen neuen Nutzer</p>
+          </div>
+          <div class="card-body">
+            <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+              <div class="row">
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Vorname" type="text" formControlName="Vorname">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Nachname" type="text" formControlName="Name">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Qualifikation" type="text" formControlName="Qualifikation">
+                  </mat-form-field>
+                </div>
+              </div>
+              <button mat-raised-button type="submit" class="btn btn-danger pull-left">Nutzer hinzufügen</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

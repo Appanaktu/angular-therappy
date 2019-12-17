@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "iamphysiotherappy-17757"
+  },
+  "targets": {
+    "iamphysiotherappy-17757": {
+      "hosting": {
+        "angularapp": [
+          "therangularappy"
+        ]
+      }
+    }
+  }
+}

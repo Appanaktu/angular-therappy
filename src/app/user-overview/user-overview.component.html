@@ -1,0 +1,42 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-danger">
+            <h4 class="card-title ">Nutzer-Übersicht</h4>
+            <p class="card-category">Übersicht über die Nutzer</p>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class=" text-primary">
+                <th>
+                  ID
+                </th>
+                <th>
+                  Vorname
+                </th>
+                <th>
+                  Nachname
+                </th>
+                <th>
+                  Qualifikation
+                </th>
+                </thead>
+                <tbody>
+                <tr *ngFor="let nutzer of userList index as i">
+                  <td>{{nutzer.id}}</td>
+                  <td> {{nutzer.vorname}}</td>
+                  <td>{{nutzer.nachname}}</td>
+                  <td>{{nutzer.qualifikation}}</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
